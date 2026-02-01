@@ -1,4 +1,4 @@
-# Therabitt's Linux Environment (Dotfiles)
+# Linux Environment (Dotfiles)
 
 ![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-blue?logo=arch-linux)
 ![Hyprland](https://img.shields.io/badge/Window_Manager-Hyprland-jq?logo=linux)
