@@ -45,7 +45,7 @@ if status is-interactive
     abbr install 'sudo pacman -S'
     abbr remove 'sudo pacman -Rns'
     abbr search 'sudo pacman -Ss'
-    abbr sync 'sudo pacmamn -Syy'
+    abbr sync 'sudo pacman -Syy'
     abbr clean 'sudo pacman -Scc'
     abbr yi 'yay -S'
     abbr yu 'yay -Syu'

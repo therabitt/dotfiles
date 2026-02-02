@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+from pathlib import Path
+
+def create_structure(project_name, include_git=False):
+    """Membuat struktur folder standar untuk proyek Data Science"""
+    
+    base_path = Path(project_name)
+    
+    # Definisi struktur folder standar
+    folders = [
+        "data/raw", 
+        "data/processed",
+        "notebooks",
+        "src",
+        "models",
+        "reports/figures"
+    ]
+    
+    # Definisi file penting
+    files = {
+        "README.md": f"# {project_name}\n\nProject setup using Automation Script.",
+        "requirements.txt": "pandas\nnumpy\nscikit-learn\nmatplotlib",
+        ".gitignore": "data/\nmodels/\n__pycache__/\n.ipynb_checkpoints/"
+    }
+    
+    print(f"🚀 Memulai setup proyek: {project_name}...")
+    
+    try: 
+        # 1. Buat Direktori
+        if base_path.exists():
+            print(f"❌️ Error: Folder '{project_name}' existed!")
+            return
+        for folder in folders:
+            (base_path / folder).mkdir(parents=True, exist_ok=True)
+            print(f" 📁 Created: {folder}")
+        # 2. Buat file dasar
+        for filename, content in files.items():
+            file_path = base_path / filename
+            with open(file_path, "w") as f:
+                f.write(content)
+            print(f" 📄 Created: {filename}")
+            
+        # 3. Opsional: Inisialisasi Git
+        if include_git:
+            os.system(f"cd {project_name} && git init")
+            print(" 🔧 Git Initialized.")
+        
+        print(f"\n✅️ Complete! Project '{project_name}' ready to use.")
+        print(f"👉️ cd {project_name}")
+        
+    except Exception  as e:
+        print(f"❌️ There's an error: {e}")        
+
+def main():
+    # Setup CLI Argument Parser
+    parser = argparse.ArgumentParser(description="CLI Tool untuk setup proyek Data Science otomatis.")
+    parser.add_argument("name", type=str, help="Nama proyek yang akan dibuat")
+    parser.add_argument("--git", action="store_true", help="Otomatis inisialisasi Git repository")
+
+    args = parser.parse_args()
+    
+    create_structure(args.name, args.git)
+
+if __name__ == "__main__":
+    main()

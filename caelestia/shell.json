@@ -103,8 +103,8 @@
       "invertColors": false,
       "background": {
         "enabled": false,
-        "opacity": 0,
-        "blur": true
+        "opacity": 0.5992772108843537,
+        "blur": false
       },
       "shadow": {
         "enabled": true,
