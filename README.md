@@ -61,7 +61,7 @@ This repository is designed for my personal use. To replicate this setup on a fr
     ln -s ~/caelestia/scripts/ds-init ~/.local/bin/ds-init          # Python script to automation generate Data Science/MLOps environment project.  
     ```
 
->Note
+>[!Note]
 You can read official documentation of [caelestia](https://github.com/caelestia-dots/caelestia) for a lot of more information.
 
 ## Useful Keybindings
