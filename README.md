@@ -6,10 +6,9 @@
 
 > **Personalized Development Environment** based on the Caelestia dotfiles, optimized for Python development and seamless multitasking.
 
-## 🖼️ Showcase
+## Showcase
 
-![Desktop Screenshot](Wallpapers/wallhaven-2yrwzy.jpg)
-*(Note: Replace this path with a screenshot of your actual desktop if available)*
+
 
 ## 📖 About This Project
 
@@ -30,7 +29,7 @@ As a developer. I needed an environment that is lightweight, keyboard-centric, a
 
 ## ⚡ Key Features & Customizations
 
-This setup is built upon the [Caelestia](https://github.com/caelestia-dots/caelestia) base, with personal modifications to suit my workflow:
+This setup is built upon the [Caelestia](https://github.com/caelestia-dots) base, with personal modifications to suit my workflow:
 
 * **Productivity Workflow:** Custom keybindings (`Super` + keys) to launch IDEs, terminals, and browsers even spotify instantly without touching the mouse.
 * **Project Management:** Integrated directory structure for Python/ML projects.
@@ -43,16 +42,27 @@ This repository is designed for my personal use. To replicate this setup on a fr
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/therabitt/dotfiles.git](https://github.com/therabitt/dotfiles.git) ~/caelestia
+    git clone https://github.com/therabitt/dotfiles ~/caelestia
+    ``` 
+2. **Install configuration**
+    Make sure you have installed [`fish`](https://github.com/fish-shell/fish-shell) in your computer.
+    ```
+    cd ~/caelestia
+    ./install.fish
     ```
 
-2.  **Link configurations:**
+3.  **Link configurations:**
     (I use a manual symlink strategy to ensure control over every file)
     ```bash
     ln -s ~/caelestia/hypr ~/.config/hypr
     ln -s ~/caelestia/fish ~/.config/fish
     ln -s ~/caelestia/foot ~/.config/foot
+    ln -s ~/caelestia/caelestia ~/.config/caelestia
+    ln -s ~/caelestia/scripts/ds-init ~/.local/bin/ds-init          # Python script to automation generate Data Science/MLOps environment project.  
     ```
+
+>Note
+You can read official documentation of [caelestia](https://github.com/caelestia-dots/caelestia) for a lot of more information.
 
 ## ⌨️ Useful Keybindings
 
@@ -67,11 +77,11 @@ This repository is designed for my personal use. To replicate this setup on a fr
 
 Tips:
 
-> You can type 'hints' command in your terminal to shorten your workflow.
+> You can type 'hints' command in your terminal to show every abbrevation that can use in your terminal.
 
-## ⚖️ Credits
+## Credits
 
-* **Base Framework:** [Caelestia Dots](https://github.com/caelestia-dots/caelestia) - Massive thanks for the beautiful foundation and aesthetic assets.
+* **Base Framework:** [Caelestia Dots](https://github.com/caelestia-dots) - Massive thanks for the beautiful foundation and aesthetic assets.
 * **Toolkit:** [Quickshell](https://quickshell.org)
 * **Wallpapers:** Various artists (stored locally).
 
