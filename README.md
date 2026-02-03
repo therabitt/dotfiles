@@ -10,13 +10,13 @@
 
 
 
-## 📖 About This Project
+## About This Project
 
 This repository hosts the configuration files (dotfiles) for my daily driver Arch Linux system. 
 
 As a developer. I needed an environment that is lightweight, keyboard-centric, and aesthetically pleasing to reduce eye strain during long coding sessions. I chose **Hyprland** (a Wayland tiling window manager) to maximize screen real estate and manage multiple terminal windows efficiently.
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 
 * **OS:** Arch Linux
 * **Window Manager:** Hyprland
@@ -27,7 +27,7 @@ As a developer. I needed an environment that is lightweight, keyboard-centric, a
 * **Browser:** Zen Browser (Firefox fork)
 * **Bar/Widgets:** Waybar & Eww
 
-## ⚡ Key Features & Customizations
+## Key Features & Customizations
 
 This setup is built upon the [Caelestia](https://github.com/caelestia-dots) base, with personal modifications to suit my workflow:
 
@@ -36,7 +36,7 @@ This setup is built upon the [Caelestia](https://github.com/caelestia-dots) base
 * **Automation:** Includes custom scripts (e.g., `mirror_toggle.sh`) to handle display outputs for presentations automatically.
 * **Symlink Management:** All configurations are centralized in this repository and symlinked to `~/.config` to ensure easy backup and replication across machines.
 
-## 🚀 Installation
+## Installation
 
 This repository is designed for my personal use. To replicate this setup on a fresh Arch Linux install:
 
@@ -64,7 +64,7 @@ This repository is designed for my personal use. To replicate this setup on a fr
 >Note
 You can read official documentation of [caelestia](https://github.com/caelestia-dots/caelestia) for a lot of more information.
 
-## ⌨️ Useful Keybindings
+## Useful Keybindings
 
 | Key Combination | Action |
 | :--- | :--- |
