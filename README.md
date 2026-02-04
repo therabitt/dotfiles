@@ -77,7 +77,7 @@ You can read official documentation of [caelestia](https://github.com/caelestia-
 
 
 >[!Tip]
-You can type simply 'hints' command in your terminal to show every abbrevation that can use in your terminal (you can also modify the hints).
+You can simply type 'hints' command in your terminal to show every abbrevation that can use in your terminal (you can also modify the hints).
 
 ## Credits
 
