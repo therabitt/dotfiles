@@ -553,7 +553,7 @@
     }
   },
   "services": {
-    "weatherLocation": "",
+    "weatherLocation": "Bandung",
     "useFahrenheit": false,
     "useTwelveHourClock": false,
     "gpuType": "",
