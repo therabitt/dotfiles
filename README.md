@@ -75,8 +75,9 @@ You can read official documentation of [caelestia](https://github.com/caelestia-
 | `Super` + `S` | Special Workspace |
 | `Super` + `1-9` | Switch Workspace |
 
+
 >[!Tip]
-You can type 'hints' command in your terminal to show every abbrevation that can use in your terminal.
+You can type simply 'hints' command in your terminal to show every abbrevation that can use in your terminal (you can also modify the hints).
 
 ## Credits
 
